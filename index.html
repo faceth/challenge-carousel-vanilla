@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+      .slide {
+        position: absolute;
+        background-size: cover;
+        background-position: center;
+        user-select: none;
+        transition: all 0.3s;
+      }
+
+      #carousel .slide {
+        display: none;
+      }
+
+      #carousel .view {
+        display : inline-block;
+      }
+      
+      #slider {
+        position : absolute;
+        top: 300px;
+        height: 500px;
+        width: 100%;
+        overflow: hidden;
+      }
+
+      #slider #rail {
+        position: absolute;
+        height: 100%;
+        width:100%;
+      }
+
+      #slider .slide {
+        width: 100%;
+        display: inline-block;
+        height: 100%;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div id="carousel"></div>
+    <div id="slider">
+      <button id="prev">previous</button>
+      <button id="next">next</button>
+    </div>
+    
+    <script src="./index.js"></script>
+    <script src="./slider.js"></script>
+  </body>
+
+</html>
